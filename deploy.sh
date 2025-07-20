@@ -1,11 +1,12 @@
-# #!/bin/bash
+#!/bin/bash
 
 # PRODUCTION
-git reset --hard
-git pull origin master
+# git reset --hard
+# git checkout master
+# git pull origin master
 
-npm i
+npm i npm -g
+npm global add serve
+npm
 npm run build
-pm2 start process.config.js --env
-
-# ESLATMA ---> deploy.sh ni mod ni o'zgartirish kerak. terminalga chmod +x deploy.sh yozish kifoya
+pm2 start "npm run start" --name=kakao
