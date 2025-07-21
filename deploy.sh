@@ -6,7 +6,7 @@ git checkout master
 git pull origin master
 
 npm i npm -g
-npm install -g serve
-npm install
+npm global add serve
+npm 
 npm run build
 pm2 start "npm run start" --name=KAKAO-NEXT
